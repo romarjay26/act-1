@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "./globals.css";
 
 export default function Home() {
@@ -29,7 +30,6 @@ export default function Home() {
       ========================= */}
       <section id="home" className="hero">
         <div className="hero-image"></div>
-
         <div className="hero-overlay"></div>
 
         <div className="hero-content">
@@ -87,9 +87,12 @@ export default function Home() {
 
         <div className="about-grid">
           <div className="about-image">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80"
               alt="Natural landscape of Balungao"
+              width={1200}
+              height={800}
+              unoptimized
             />
 
             <div className="image-tag">
@@ -149,13 +152,15 @@ export default function Home() {
         </div>
 
         <div className="attraction-layout">
-
           {/* FEATURED CARD */}
           <article className="featured-card">
             <div className="card-image">
-              <img
+              <Image
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh9ke8G0f6HTRnG4KONF7rotIrESMzQxzD30InaIaPPABBOzC-nRBAjTXnGlsffkQcY42KaznAy_hipFASLO3gRfpy1SDxTUm1ikNBPR0MbptJokjJLfJbYYfydT3hPbO4zTAFXbFYrQ-J/s1600/Balungao-Hilltop-Swimming-Pool.jpg"
                 alt="Balungao Hot Spring"
+                width={1200}
+                height={800}
+                unoptimized
               />
 
               <span className="card-number">01</span>
@@ -183,12 +188,14 @@ export default function Home() {
 
           {/* SECONDARY CARDS */}
           <div className="side-cards">
-
             <article className="small-card">
               <div className="small-card-image">
-                <img
+                <Image
                   src="https://cdn.mountains.com.ph/photos/2a43010f-7e2c-4115-ac7d-ca871524b0c0/ae4f46ca1ae47800dab30a030800cb36.jpg"
                   alt="Balungao Hill"
+                  width={800}
+                  height={600}
+                  unoptimized
                 />
 
                 <span>02</span>
@@ -210,9 +217,12 @@ export default function Home() {
 
             <article className="small-card">
               <div className="small-card-image">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=80"
                   alt="Nature escape"
+                  width={1000}
+                  height={700}
+                  unoptimized
                 />
 
                 <span>03</span>
@@ -231,7 +241,6 @@ export default function Home() {
                 <a href="#gallery">DISCOVER →</a>
               </div>
             </article>
-
           </div>
         </div>
       </section>
@@ -252,17 +261,19 @@ export default function Home() {
           </div>
 
           <p>
-            A glimpse of Balungao's landscapes,
+            A glimpse of Balungao&apos;s landscapes,
             natural surroundings, and peaceful atmosphere.
           </p>
         </div>
 
         <div className="gallery-grid">
-
           <div className="gallery-item gallery-large">
-            <img
+            <Image
               src="https://ilovepangasinan.com/wp-content/uploads/2023/07/2-2.jpg"
               alt="Balungao mountain landscape"
+              width={1200}
+              height={800}
+              unoptimized
             />
 
             <div className="gallery-caption">
@@ -272,9 +283,12 @@ export default function Home() {
           </div>
 
           <div className="gallery-item">
-            <img
+            <Image
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2kRgZPrPbOZUSyTZXGEGiw9ypvzGjeishdA2eNk3ahYq0jNDovof9wsU&s=10"
               alt="Balungao scenery"
+              width={800}
+              height={600}
+              unoptimized
             />
 
             <div className="gallery-caption">
@@ -284,9 +298,12 @@ export default function Home() {
           </div>
 
           <div className="gallery-item">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=80"
               alt="Forest scenery"
+              width={1000}
+              height={700}
+              unoptimized
             />
 
             <div className="gallery-caption">
@@ -296,9 +313,12 @@ export default function Home() {
           </div>
 
           <div className="gallery-item gallery-wide">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
               alt="Scenic landscape"
+              width={1200}
+              height={800}
+              unoptimized
             />
 
             <div className="gallery-caption">
@@ -306,7 +326,6 @@ export default function Home() {
               PEACEFUL COUNTRYSIDE
             </div>
           </div>
-
         </div>
       </section>
 
