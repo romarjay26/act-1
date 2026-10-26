@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/balungao",
+  basePath: "/act-1",
   images: {
     unoptimized: true,
   },
